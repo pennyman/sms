@@ -50,7 +50,7 @@ def lambda_handler(event, context):
     print(response)
 
     response = sqs_client.send_message(
-        QueueUrl= 'https://sqs.ap-northeast-2.amazonaws.com/650296856874/prod-showprise-sms-result-sqs',
+        QueueUrl= 'https://sqs.ap-northeast-2.amazonaws.com/xxxxx/prod-showprise-sms-result-sqs',
         MessageBody= sqsMsg,
         MessageAttributes={
             'phone_number': {
