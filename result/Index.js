@@ -3,7 +3,7 @@
 var AWS = require("aws-sdk");
 var sqs = new AWS.SQS({region: 'ap-northeast-2'});
 
-var TASK_QUEUE_URL = 'https://sqs.ap-northeast-2.amazonaws.com/580729374129/dev-showprise-sms-result-sqs';
+var TASK_QUEUE_URL = 'xxxx';
 var mysql = require('mysql');
 var phoneNo = '';
 var messageId = '';
@@ -54,9 +54,9 @@ exports.handler = function(event, context, callback) {
       callback(err);
     } else {
       var connection = mysql.createConnection({
-          host     : 'dev-showprise-db.cujvftkj3jra.ap-northeast-2.rds.amazonaws.com',
-          user     : 'ses_lambda_user',
-          password : 'devShowprise2018$',
+          host     : 'xxx',
+          user     : 'xxx',
+          password : 'xxxx',
           port     : 3306,
           database : 'showprise'
       });
